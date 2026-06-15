@@ -1,0 +1,3 @@
+{
+  "buildCommand": "cd ../.. && npx convex deploy --cmd 'pnpm --filter @scheduler/web build' --cmd-url-env-var-name NEXT_PUBLIC_CONVEX_URL"
+}

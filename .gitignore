@@ -11,6 +11,14 @@ out/
 
 # convex
 .convex/
+# Regenerate with `npx convex dev` — committed so the repo typechecks before linking Convex.
+# convex/_generated/
+
+# turbo
+.turbo/
+
+# electron
+dist-electron/
 
 # misc
 .DS_Store

@@ -1,0 +1,24 @@
+{
+  "name": "scheduler",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:web": "pnpm --filter @scheduler/web dev",
+    "dev:convex": "convex dev",
+    "dev:electron": "pnpm --filter @scheduler/electron dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "codegen": "node scripts/generate-convex.mjs",
+    "clean": "turbo clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "convex": "^1.32.0",
+    "turbo": "^2.5.4",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@10.13.1",
+  "engines": {
+    "node": ">=20"
+  }
+}
