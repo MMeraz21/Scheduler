@@ -302,8 +302,8 @@ Tools: **pnpm workspaces**. Vercel build command: `npx convex deploy --cmd 'npm 
 ## Implementation checklist
 
 - [x] Scaffold pnpm monorepo: `apps/web` (Next.js + Convex), `apps/electron`, `convex/`
-- [ ] Convex schema (events table) + Convex Auth; auth check in every query/mutation
-- [ ] `convex/events.ts` — list, create, update, remove scoped to authenticated user
+- [x] Convex schema (events table) + Convex Auth (Password provider); auth check in every query/mutation
+- [x] `convex/events.ts` — list, create, update, remove scoped to authenticated user
 - [ ] Calendar UI: shadcn/ui, FullCalendar, `useQuery`/`useMutation` from `convex/react`
 - [ ] Serwist/next PWA + shadcn mobile layouts; electron-vite shell loads Vercel URL
 - [ ] Deploy to Vercel with `npx convex deploy --cmd build`; `CONVEX_DEPLOY_KEY`, custom domain

@@ -13,6 +13,7 @@
     "clean": "turbo clean && rm -rf node_modules"
   },
   "devDependencies": {
+    "@types/node": "^20.19.43",
     "convex": "^1.32.0",
     "turbo": "^2.5.4",
     "typescript": "^5.9.3"
@@ -20,5 +21,9 @@
   "packageManager": "pnpm@10.13.1",
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "@auth/core": "^0.41.3",
+    "@convex-dev/auth": "^0.0.94"
   }
 }
